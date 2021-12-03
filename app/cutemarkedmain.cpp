@@ -23,12 +23,13 @@
 #include <QStyleFactory>
 #include <QDebug>
 
+#include "version.h"
+
 #ifdef Q_OS_WIN
 #include <QDir>
 #include <QFileInfo>
 #include <QSettings>
 
-#include "version.h"
 
 // Helper function to register supported file types
 // This is needed to enable the application jump list to show the desired recent files
@@ -60,7 +61,7 @@ int main(int argc, char *argv[])
     app.setOrganizationName(QStringLiteral("CuteMarkEd Project"));
     app.setApplicationName(QStringLiteral("CuteMarkEd"));
     app.setApplicationDisplayName(QStringLiteral("CuteMarkEd"));
-    app.setApplicationVersion(QStringLiteral(VERSION));
+    app.setApplicationVersion(QStringLiteral(u"%1").arg(APPVERSION));
 
 #ifdef Q_OS_WIN
     QStringList fileTypes;

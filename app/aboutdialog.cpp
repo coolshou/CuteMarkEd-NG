@@ -16,9 +16,9 @@
  */
 #include "aboutdialog.h"
 #include "ui_aboutdialog.h"
-
+#include "version.h"
 static const QString COPYRIGHT = QStringLiteral("Copyright 2013-2016 Christian Loose");
-static const QString HOMEPAGE = QStringLiteral("<a href=\"http://cloose.github.io/CuteMarkEd\">http://cloose.github.io/CuteMarkEd</a>");
+static const QString HOMEPAGE = QStringLiteral("<a href=\"%1\">%2</a>").arg(SOURCEURL).arg(SOURCEURL);
 
 AboutDialog::AboutDialog(QWidget *parent) :
     QDialog(parent),
