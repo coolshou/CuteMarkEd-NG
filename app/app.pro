@@ -111,7 +111,8 @@ HEADERS  += \
     aboutdialog.h \
     statusbarwidget.h \
     savefileadapter.h \
-    controls/navigationwidget.h
+    controls/navigationwidget.h \
+    version.h
 
 FORMS    += \
     controls/fileexplorerwidget.ui \

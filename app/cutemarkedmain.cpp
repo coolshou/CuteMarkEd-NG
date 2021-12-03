@@ -28,6 +28,8 @@
 #include <QFileInfo>
 #include <QSettings>
 
+#include "version.h"
+
 // Helper function to register supported file types
 // This is needed to enable the application jump list to show the desired recent files
 static void associateFileTypes(const QStringList &fileTypes)
@@ -58,7 +60,7 @@ int main(int argc, char *argv[])
     app.setOrganizationName(QStringLiteral("CuteMarkEd Project"));
     app.setApplicationName(QStringLiteral("CuteMarkEd"));
     app.setApplicationDisplayName(QStringLiteral("CuteMarkEd"));
-    app.setApplicationVersion(QStringLiteral("0.11.3"));
+    app.setApplicationVersion(QStringLiteral(VERSION));
 
 #ifdef Q_OS_WIN
     QStringList fileTypes;
