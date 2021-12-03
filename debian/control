@@ -1,0 +1,16 @@
+Source: cutemarked
+Section: devel
+Priority: optional
+Maintainer: coolshou <coolshou2060@gmail.com>
+Build-Depends: debhelper-compat (= 12), qtbase5-dev
+Standards-Version: 4.4.1
+Homepage: https://github.com/coolshou/CuteMarkEd-NG
+Vcs-Browser: https://github.com/coolshou/CuteMarkEd-NG
+Vcs-Git: https://github.com/coolshou/CuteMarkEd-NG.git
+
+Package: cutemarked
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A Qt-based, free and open source markdown editor with live HTML preview
+ A Qt-based, free and open source markdown editor with live HTML preview, math
+ expressions, code syntax highlighting and syntax highlighting of markdown document.
