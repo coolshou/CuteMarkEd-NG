@@ -33,7 +33,7 @@ A Qt-based, free and open source markdown editor with live HTML preview, math ex
 | ----- | ------- |
 | [![Build Status](https://travis-ci.org/cloose/CuteMarkEd.png)](https://travis-ci.org/cloose/CuteMarkEd) | [![](https://ci.appveyor.com/api/projects/status/github/cloose/CuteMarkEd)](https://ci.appveyor.com/project/cloose/cutemarked) |
 
-[![Stories in Ready](https://badge.waffle.io/cloose/CuteMarkEd.png?label=ready)](https://waffle.io/cloose/CuteMarkEd)
+
 
 ### HELP NEEDED
 
