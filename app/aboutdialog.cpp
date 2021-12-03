@@ -19,6 +19,7 @@
 #include "version.h"
 static const QString COPYRIGHT = QStringLiteral("Copyright 2013-2016 Christian Loose");
 static const QString HOMEPAGE = QStringLiteral("<a href=\"%1\">%2</a>").arg(SOURCEURL).arg(SOURCEURL);
+static const QString OLDHOMEPAGE = QStringLiteral("<a href=\"http://cloose.github.io/CuteMarkEd\">http://cloose.github.io/CuteMarkEd</a>");
 
 AboutDialog::AboutDialog(QWidget *parent) :
     QDialog(parent),
@@ -31,10 +32,11 @@ AboutDialog::AboutDialog(QWidget *parent) :
             .arg(qApp->applicationVersion());
     ui->messageLabel->setText(appInfo);
 
-    const QString description = QStringLiteral("<p>%1<br>%2</p><p>%3</p>")
+    const QString description = QStringLiteral("<p>%1<br>%2</p><p>%3</p><p>%4</p>")
             .arg(tr("Qt-based, free and open source markdown editor with live HTML preview"))
+            .arg(HOMEPAGE)
             .arg(COPYRIGHT)
-            .arg(HOMEPAGE);
+            .arg(OLDHOMEPAGE);
     ui->descriptionLabel->setText(description);
 }
 
