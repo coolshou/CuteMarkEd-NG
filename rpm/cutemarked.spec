@@ -9,7 +9,7 @@
 Name:                   cutemarked
 Summary:                Qt-based Markdown editor
 Group:                  Productivity/Text/Editors
-Version:                0.11.3
+Version:                0.12.1
 Release:                1
 License:                GPL-2.0+
 Url:                    http://github.com/cloose/CuteMarkEd
@@ -18,8 +18,8 @@ BuildRoot:              %{_tmppath}/%{name}-%{version}-build
 
 Requires:               cutemarked-plugin-fontawesome
 
-BuildRequires:          libstdc++-devel 
-BuildRequires:          gcc-c++ 
+BuildRequires:          libstdc++-devel
+BuildRequires:          gcc-c++
 BuildRequires:          make
 BuildRequires:          pkgconfig
 BuildRequires:          pkgconfig(Qt5Core)
@@ -52,18 +52,18 @@ License:                BSD-3-Clause
 
 %description plugin-fontawesome
 This package provides the fontawesome iconengine plugin
- 
+
 %prep
 %setup -q -n %{name}-%{version}
 
 %build
-%{_qt5_qmake} 
+%{_qt5_qmake}
 make
 
 %install
 make INSTALL_ROOT="%buildroot" install
 
-%files 
+%files
 %defattr(-,root,root,755)
 %_bindir/%{name}
 %{_datadir}/applications/%{name}.desktop
