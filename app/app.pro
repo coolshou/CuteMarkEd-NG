@@ -31,7 +31,8 @@ TRANSLATIONS += \
     translations/cutemarked_pl.ts \
     translations/cutemarked_pt_BR.ts \
     translations/cutemarked_ru.ts \
-    translations/cutemarked_zh_CN.ts
+    translations/cutemarked_zh_CN.ts \
+    translations/cutemarked_zh_TW.ts
 
 win32:RC_FILE = cutemarked.rc
 macx {
