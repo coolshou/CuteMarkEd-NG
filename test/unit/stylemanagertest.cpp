@@ -45,8 +45,8 @@ void StyleManagerTest::returnsPathForCodeHighlighting()
 
     QCOMPARE(styleManager.codeHighlightingPath(defaultTheme), QLatin1String("default"));
     QCOMPARE(styleManager.codeHighlightingPath(githubTheme), QLatin1String("github"));
-    QCOMPARE(styleManager.codeHighlightingPath(solarizedLightTheme), QLatin1String("solarized_light"));
-    QCOMPARE(styleManager.codeHighlightingPath(solarizedDarkTheme), QLatin1String("solarized_dark"));
+    QCOMPARE(styleManager.codeHighlightingPath(solarizedLightTheme), QLatin1String("solarized-light"));
+    QCOMPARE(styleManager.codeHighlightingPath(solarizedDarkTheme), QLatin1String("solarized-dark"));
 }
 
 void StyleManagerTest::returnsPathForPreviewStylesheet()
@@ -67,7 +67,7 @@ void StyleManagerTest::returnsPathForCustomPreviewStylesheet()
     QString expectedPath = "file:///C:/User/Test/custom.css";
     Theme customTheme("Custom", "Default", "Default", "Custom");
     StyleManager styleManager;
-    
+
     styleManager.insertCustomPreviewStylesheet("Custom", expectedPath);
 
     QCOMPARE(styleManager.previewStylesheetPath(customTheme), expectedPath);
